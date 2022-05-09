@@ -1,0 +1,25 @@
+﻿html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.directionsContainer {
+    width: 380px;
+    height: 100%;
+    overflow-y: auto;
+    float: left;
+}
+
+#myMap {
+    position: relative;
+    width: calc(100% - 380px);
+    height: 100%;
+    float: left;
+    
+}
+
+
+.directionsContainer{
+    text-align:right;
+}

@@ -1,0 +1,97 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<head>
+
+    <title>loadmapasyncHTML</title>
+    <style type='text/css'>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Segoe UI',Helvetica,Arial,Sans-Serif
+        }
+    </style>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Ausb5oPsNgwvhkyOgS_h9mkXvbR2I2L2trnvcFuyL2UONG-vFRu16dw-iaTAtc-C'></script>
+    <link rel=" stylesheet" href="Stylesheet.Css" />
+
+
+</head>
+
+
+
+<body onload='loadMapScenario();'>
+
+
+
+  
+
+
+    <form>
+        <label>Where would you Like to go:</label><br />
+        <input type="text" id="points-of-interest" placeholder="Search.." />
+        <datalist>
+            <option value="resturants">Resturants</option>
+            <option value="school">School</option>
+            <option value="ATM">ATM</option>
+            <option value="Coffee">Coffee</option>
+
+
+
+
+
+
+
+
+
+
+
+        </datalist>
+        <div>
+
+            <div id="directionContainer"></div>
+            <div id="printoutPanel"></div>
+
+
+        </div>
+        <button type="button" onclick="APIRequest()">Submit</button>
+        <button type="button" onclick="deletePoiPins()">Delete Pins</button>
+       
+       
+
+
+
+
+
+
+    </form>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id='myMap' style='width: 100vw; height: 100vh;'></div>
+    <script src="JavaScript.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
